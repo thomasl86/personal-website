@@ -81,8 +81,8 @@ h2 {
     padding: 0.5rem;
   }
   #sideNav .navbar-brand .img-profile {
-    max-width: 10rem;
-    max-height: 10rem;
+    max-width: 11rem;
+    max-height: 11rem;
     border: 0.5rem solid rgba(255, 255, 255, 0.2);
   }
   #sideNav .navbar-collapse {
@@ -131,17 +131,27 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: #BD5D38 !important;
+  background-color: #348aff !important;
 }
 
 .text-primary {
-  color: #BD5D38 !important;
+  color: #348aff !important;
 }
 
 a {
-  color: #BD5D38;
+  color: #348aff;
 }
 
 a:hover, a:focus, a:active {
   color: #824027;
+}
+
+td {
+  text-align: left;
+  padding: 0 5px;
+}
+
+table {
+  border-spacing: 5px;
+  font-size: .9rem;
 }

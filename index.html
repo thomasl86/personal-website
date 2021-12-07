@@ -75,10 +75,15 @@
           </div>
           <p class="mb-5">
             <p>I am an experienced robotics and mechatronics engineer having worked on a wide range of medical and industrial engineering research projects. In general, I am interested in and passionate about developing and designing custom and complex automation solutions utilizing cutting edge robotics research. This includes using real-time multi-sensor feedback to create intelligent and adaptive robotic and automated systems. I bring this background and passion in systems, mechatronics and software engineering to all my projects. </p>
+
             <p>My current work aligns well with my general area of interest as it focuses on large-scale robotic additive manufacturing (AM) utilizing 6-axis robotic articulated arms and 2-axis workpiece positioning systems. Such systems are leveraged to facilitate support-free and large-scale printing of metal and polymer parts. Through this work, I have helped advance state of the art research into the industry through collaborations with InnoTech Alberta. I am passionate about robotic AM, which I believe to be a very exciting and rewarding field with potential to significantly transform, optimize and re-define existing industrial manufacturing technologies in order to satisfy the fast-changing product and technology demands of a highly connected 21st century.</p>
-            <p>I have been working with and conducting research on industrial robotics, mechatronics and automation research as a postdoctoral fellow in Dr. Ahmed Qureshi’s <a href="https://www.adams-lab.ca/">Additive Design and Manufacturing Systems (ADaMS) Laboratory</a> at the University of Alberta in Edmonton, Alberta since October 2018. My research is mainly focused on large-scale robotic additive manufacturing with metal and polymer deposition, including developing a hardware-agnostic software toolchain for the execution of AM 3D printing trajectories with varying robotic and deposition systems, including in-situ process monitoring and sensing.</p>
+
+            <p>I have been working with and conducting research on industrial robotics, mechatronics and automation as a postdoctoral fellow in Dr. Ahmed Qureshi’s <a href="https://www.adams-lab.ca/">Additive Design and Manufacturing Systems (ADaMS) Laboratory</a> at the University of Alberta in Edmonton, Alberta since October 2018. My research is mainly focused on large-scale robotic additive manufacturing with metal and polymer deposition, including developing a hardware-agnostic software toolchain for the execution of AM 3D printing trajectories with varying robotic and deposition systems, including in-situ process monitoring, sensing and control.</p>
+
             <p>Through my work with the ADaMS lab, I have collaborated with InnoTech Alberta, where I worked closely with Dr Tonya Wolfe on research on parameter optimization during robotic WAAM. These research findings were published in the journal Materials & Design (see section <a href="#publications">Publications</a>).</p>
+
             <p>I supervise senior undergraduate and graduate research and development on a range of topics, including a hybrid repair project using 3D point cloud reconstruction and various designs of control solutions for custom 3-axis and 5-axis CNC-based AM and hybrid manufacturing platforms. Supervising and advising numerous undergraduate and graduate students on their research and development throughout my academic career has given me important and valuable experience in leadership and management.</p>
+
             <p>I received my PhD from the University of Alberta in 2018 under the supervision of Dr. Mahdi Tavakoli of the <a href="http://www.ece.ualberta.ca/~tbs/pmwiki/">Telerobotic and Biorobotic Systems (TBS) Laboratory</a>. During my doctoral research, I developed novel technologies for robotic assistance during the minimally invasive medical procedure prostate brachytherapy, including publishing original research on the estimation of needle deflection, trajectory prediction, and a novel method for the steering of flexible needles.</p>
             <!-- TODO add some content about hobbies etc. -->
           </p>
@@ -173,7 +178,9 @@
                     <ul>
                       <li>Ability to interpret RepRap (planar) and Mastercam-Aplus (planar and multi-axis) gcodes</li>
                     </ul>
+                    <li>Ability to interface and control various types of robot arms and cartesian robots (e.g., 3 or 5-axis CNC systems)</li>
                     <li>Ability to incorporate sensing systems for sensor fusion, machine learning and control feedback</li>
+                    <li>Includes digital twins</li>
                     <li>Where other softwares provide only open-loop trajectory execution (Robotmaster, Octopuz), our software has the potential ability to execute builds with closed-loop real-time process control</li>
                   </ul>
                 </p>
@@ -185,9 +192,21 @@
                     </video>
                   </div>
                   <div class="col-md-4">
-                    <i>A video of a planar robotic WAAM build of a demo component with complex curves using the AM toolchain. The toolpath was generated with Slic3r. In collaboration with InnoTech Alberta.</i>
+                    <i>A video of a planar robotic WAAM build of a demo component with complex curves using the AM toolchain on a Motoman MA2010 robot. The toolpath was generated with Slic3r. In collaboration with InnoTech Alberta.</i>
                     <p></p>
                     <p><a href="https://www.linkedin.com/posts/ajqureshi_edmonton-alberta-additivemanufacturing-activity-6687490720963674112-J1Ug">LinkedIn post</a></p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4.5">
+                    <video width="380px" controls>
+                      <source src="video/3-axis_waam_demo_v2.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="col-md-4">
+                    <i>A video of a planar robotic WAAM build of a demo component with complex curves using the AM toolchain on an in-house developed 3-axis gantry system (GRBL-based). The toolpath was generated with Slic3r.</i>
+                    <p></p>
+                    <p><a href="https://www.linkedin.com/posts/lehmann-td_ai-adamslab-sensorfusion-activity-6872985405164265472-RkPt">LinkedIn post</a></p>
                   </div>
                 </div>
                 <p></p>
@@ -209,7 +228,7 @@
                     </video>
                   </div>
                   <div class="col-md-4">
-                    <i>A video of a planar robotic polymer AM build of a dogbone sample using a Mahor pellet extruder. The toolpath was generated with Cura. In collaboration with the <a href="http://www.ece.ualberta.ca/~tbs/pmwiki/">TBS lab</a>.</i>
+                    <i>A video of a planar robotic polymer AM build of a dogbone sample using a Mahor pellet extruder and a Motoman SIA5 robot. The toolpath was generated with Cura. In collaboration with the <a href="http://www.ece.ualberta.ca/~tbs/pmwiki/">TBS lab</a>.</i>
                     <p></p>
                     <p><a href="https://www.linkedin.com/posts/ajqureshi_adamslab-additivemanufacturing-roboticsautomation-activity-6810621287409549312-6oMY">LinkedIn post</a></p>
                   </div>
@@ -237,7 +256,9 @@
                   </div>
                 </div>
                 <p></p>
-                When I first joined the ADaMS lab at the University of Alberta, I began to explore how to execute 3D printing trajectories on industrial manipulators using ROS. With my prior experience with <a href="https://rosindustrial.org/">ROS-Industrial</a>-based robot drivers, the kinematics framework <a href="https://moveit.ros.org/">MoveIt!</a> and hardware integration via ROS, I was confident that it was possible to develop a software for execution of 3D printing trajectories using software frameworks I was already familiar with from past projects. This initial idea developed into a functional and hardware-agnostic AM software toolchain for the execution of planar and multi-axis AM trajectories with successful builds of demo components. While the toolchain has only been used on different Motoman robot models, initial tests in simulation show that it is possible to execute the same trajectories on ABB robots with no modification to the toolchain. One of the most attractive features of the toolchain is the hardware-agnostic and modular design that enables the quick integration of different deposition and robotic systems and extension with algorithms for the real-time monitoring and control of the deposition process. Below are some of the highlights, demo videos and pictures of builds completed with the AM toolchain. A special tank you goes to the students who helped with integration and development of software drivers for deposition systems. For robotics-centred data structure definitions and trajectory visualization, the toolchain uses a modified version of the ROS Additive Manufacturing stack.
+                <p>When I first joined the ADaMS lab at the University of Alberta, I began to explore how to execute 3D printing trajectories on industrial manipulators using ROS. With my prior experience with <a href="https://rosindustrial.org/">ROS-Industrial</a>-based robot drivers, the kinematics framework <a href="https://moveit.ros.org/">MoveIt!</a> and hardware integration via ROS, I was confident that it was possible to develop a software for execution of 3D printing trajectories using software frameworks I was already familiar with from past projects. This initial idea developed into a functional and hardware-agnostic AM software toolchain for the execution of planar and multi-axis AM trajectories with successful builds of demo components. </p>
+
+                <p>The toolchain has so far been successfully used on different Motoman robot models (MA2010 and SIA5) and a custom, in-house built CNC-based (GRBL) 3-axis cartesian gantry system (see above videos). Initial hardware simulation tests (ABB's RobotStudio) have shown that it is possible to execute the same trajectories on ABB robots, with no modification to the toolchain. Only a hardware-specific driver is needed. One of the most attractive features of the toolchain is the hardware-agnostic and modular design that enables the quick integration of different deposition and robotic systems and extension with algorithms for the real-time monitoring and control of the deposition process. A special tank you goes to the students who helped with integration and development of software drivers for some of the systems. For robotics-centred data structure definitions and trajectory visualization, the toolchain uses a modified version of the ROS Additive Manufacturing stack.</p>
               </div>
             </div>
           </div>
